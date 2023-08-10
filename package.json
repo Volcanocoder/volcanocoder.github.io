@@ -1,0 +1,14 @@
+{
+  "name": "rajabit",
+  "author": {
+    "email": "96rajabit@gmail.com",
+    "name": "rajabit",
+    "url": "https://github.com/rajabit"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/app.css -o ./dist/app.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

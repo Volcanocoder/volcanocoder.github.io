@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/app.css" rel="stylesheet" />
+    <title>Mehdi Rajabi</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+    />
+  </head>
+
+  <body
+    class="font-ubuntu dark:text-white bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-950 dark:to-slate-900"
+  >
+    <div class="relative pt-12" id="app">
+      <header
+        class="fixed top-0 w-full border-b backdrop-blur-md shadow-sm border-slate-200 h-12 dark:border-slate-900"
+      >
+        <div class="container h-full mx-auto">
+          <div class="w-full h-full inline-flex justify-center items-stretch">
+            <a
+              class="hover:bg-slate-300 active:bg-slate-500 active:dark:bg-slate-800 hover:dark:bg-slate-900 px-3 mx-3 duration-150 transition text-center leading-extra-loose"
+              type="button"
+              href="#home"
+            >
+              Home
+            </a>
+
+            <button
+              class="border rounded bg-blue-500 text-white px-2 py-1"
+              type="button"
+              onclick="toggleTheme()"
+            >
+              toggle Theme
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section id="home">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="flex flex-col items-center justify-center">
+            <div class="text-exl font-extrabold ...">
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+              >
+                Mehdi Rajabi
+              </span>
+            </div>
+            <div
+              class="border-t border-slate-200 h-12 dark:border-slate-900 inline-flex pt-5"
+            >
+              <a
+                rel="noopener noreferrer"
+                title="email"
+                class="hover:text-blue-600 duration-150 px-2"
+                target="_blank"
+                href="mailto:96rajabi@gmail.com"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                  />
+                  <path
+                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                  />
+                </svg>
+              </a>
+
+              <a
+                rel="noopener noreferrer"
+                title="twitter"
+                class="hover:text-blue-600 duration-150 px-2"
+                target="_blank"
+                href="https://twitter.com/96rajabi"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  fill="currentColor"
+                  viewBox="0 0 248 204"
+                  class="w-8 h-8"
+                >
+                  <path
+                    d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
+                  />
+                </svg>
+              </a>
+
+              <a
+                rel="noopener noreferrer"
+                title="github"
+                class="hover:text-blue-600 duration-150 px-2"
+                target="_blank"
+                href="https://github.com/rajabit"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 240 240"
+                  class="w-8 h-8"
+                  fill="currentColor"
+                >
+                  <g
+                    transform="translate(0.000000,240.000000) scale(0.100000,-0.100000)"
+                    stroke="none"
+                  >
+                    <path
+                      d="M970 2301 c-305 -68 -555 -237 -727 -493 -301 -451 -241 -1056 143
+             -1442 115 -116 290 -228 422 -271 49 -16 55 -16 77 -1 24 16 25 20 25 135 l0
+             118 -88 -5 c-103 -5 -183 13 -231 54 -17 14 -50 62 -73 106 -38 74 -66 108
+             -144 177 -26 23 -27 24 -9 37 43 32 130 1 185 -65 96 -117 133 -148 188 -160
+             49 -10 94 -6 162 14 9 3 21 24 27 48 6 23 22 58 35 77 l24 35 -81 16 c-170 35
+             -275 96 -344 200 -64 96 -85 179 -86 334 0 146 16 206 79 288 28 36 31 47 23
+             68 -15 36 -11 188 5 234 13 34 20 40 47 43 45 5 129 -24 214 -72 l73 -42 64
+             15 c91 21 364 20 446 0 l62 -16 58 35 c77 46 175 82 224 82 39 0 39 -1 55 -52
+             17 -59 20 -166 5 -217 -8 -30 -6 -39 16 -68 109 -144 121 -383 29 -579 -62
+             -129 -193 -219 -369 -252 l-84 -16 31 -55 32 -56 3 -223 4 -223 25 -16 c23
+             -15 28 -15 76 2 80 27 217 101 292 158 446 334 590 933 343 1431 -145 293
+             -419 518 -733 602 -137 36 -395 44 -525 15z"
+                    />
+                  </g>
+                </svg>
+              </a>
+
+              <a
+                class="hover:text-blue-600 duration-150 px-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="linkedin"
+                href="https://www.linkedin.com/in/96rajabi"
+              >
+                <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+                <svg
+                  enable-background="new 0 0 32 32"
+                  height="32px"
+                  id="Layer_1"
+                  version="1.0"
+                  viewBox="0 0 32 32"
+                  width="32px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 240 240"
+                  class="w-8 h-8"
+                  fill="currentColor"
+                >
+                  <g>
+                    <circle
+                      clip-rule="evenodd"
+                      cx="16"
+                      cy="16"
+                      fill-rule="evenodd"
+                      r="16"
+                    />
+                    <g>
+                      <rect fill="#000" height="14" width="4" x="7" y="11" />
+                      <path
+                        d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                        fill="#000"
+                      />
+                      <circle cx="9" cy="8" fill="#000" r="2" />
+                    </g>
+                  </g>
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-span-2 flex overflow-hidden h-100 items-center">
+            <canvas class="block !w-full" id="canvas3d"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10" id="about">
+        <div class="container mx-auto">
+          <div
+            class="bg-white dark:bg-zinc-900 grid grid-cols-4 gap-3 rounded-md border border-slate-200 dark:border-slate-900 overflow-hidden p-5 shadow-lg"
+          >
+            <div class="col-span-4 md:col-span-1 grid grid-cols-2">
+              <img
+                alt="mehdi rajabi"
+                class="col-span-1 md:col-span-2 mx-auto rounded shadow-md border text-sm border-slate-200 mb-2 w-48 h-48 dark:border-slate-900"
+                src="https://avatars.githubusercontent.com/u/25779946"
+              />
+
+              <div
+                class="col-span-1 md:col-span-2 h-full flex items-center justify-center"
+              >
+                <ul
+                  class="list-inside list-none text-gray-600 text-sm dark:text-white/70"
+                >
+                  <li class="flex items-center mb-1">
+                    <svg
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                      version="1.1"
+                      width="16"
+                      height="16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z"
+                      ></path>
+                    </svg>
+                    <span class="ms-1">Isfahan, Iran</span>
+                  </li>
+
+                  <li class="flex items-center mb-1">
+                    <svg
+                      viewBox="0 0 16 16"
+                      version="1.1"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"
+                      ></path>
+                    </svg>
+                    <a class="ms-1" href="mailto:96rajabi@gmail.com">
+                      96rajabi@gmail.com
+                    </a>
+                  </li>
+
+                  <li class="flex items-center mb-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span class="ms-1">Born: 1996, September, 5</span>
+                  </li>
+
+                  <li class="flex items-center mb-1">
+                    <svg
+                      viewBox="0 0 16 16"
+                      version="1.1"
+                      width="16"
+                      fill="currentColor"
+                      height="16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"
+                      ></path>
+                    </svg>
+                    <span class="ms-1">Updated: 2023, August, 10 </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-span-4 md:col-span-3 overflow-y-hidden overflow-x-auto"
+            >
+              <h1 class="text-xl font-bold mb-2">Github contributions</h1>
+
+              <div
+                class="overflow-hidden rounded px-2 py-2 select-none w-[820px] h-36 bg-white"
+              >
+                <iframe
+                  title="git"
+                  class="w-[800px]"
+                  src="https://notion-github-embed.vercel.app/chart/rajabit"
+                ></iframe>
+              </div>
+
+              <div id="bio" class="mt-5">
+                <h1 class="text-xl font-bold mb-1">About</h1>
+                <p
+                  class="text-italic text-gray-600 dark:text-white/70 md:w-4/6"
+                  lang="en"
+                >
+                  Full-Stack and mobile application developer with 10 years of
+                  experience. Technologies that I'm currently working with are
+                  (Laravel, Nuxt.js, Node.js, and Java Android).
+                  <br />
+                  If you're looking for a skilled professional who can deliver
+                  innovative solutions that drive success for your online
+                  business, then look no further than my comprehensive expertise
+                  and proven track record.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences" class="mb-5">
+        <div class="container mx-auto">
+          <div class="w-full md:w-4/5 lg:w-4/6 align-middle flex mx-auto">
+            <div>
+              <h1 class="uppercase font-bold text-2xl underline grow-0 px-3 py-5">
+                Experience
+              </h1>
+            </div>
+            <div class="grow mx-5 divide-y divide-slate-400/70 dark:divide-slate-800">
+              <!-- PooyaPendar -->
+              <div class="mb-5 pt-5">
+                <div class="flex mb-5">
+                  <div class="block grow">
+                    <h2 class="font-bold text-lg">Full Stack Developer</h2>
+                    <a title="PooyaPendar" href="https://pooyapendar.ir">
+                      Pooya Pendar Pishro (PPPCO) · Full-time
+                    </a>
+                    <div class="text-gray-600 dark:text-white/50">
+                      Dec 2019 - Dec 2023 · 4 yrs, Esfahan, Iran
+                    </div>
+                  </div>
+                  <a title="PooyaPendar" href="https://pooyapendar.ir">
+
+                  <img
+                    alt="pooyapendar"
+                    width="200"
+                    src="/dist/images/logo-fit-1-300x126.png"
+                  />
+                  </a>
+                </div>
+                <p class="text-gray-600 dark:text-white/50 italic">
+                  I have been involved in many projects, life cycles, from design
+                  to maintenance.
+                  <br />
+                  Technology experience:
+                  <ul class="list-inside list-disc text-inherit text-gray-600 dark:text-white/50">
+                    <li>PHP Laravel server REST development.</li>
+                    <li>NuxtJs SSR and PWA application development (multilingual, multiple themes).</li>
+                    <li>Mysql, SQLite Database architecture.</li>
+                    <li>Vuetify material design, And Tailwind themes.</li>
+                    <li>Maintenance project using Linux Ubuntu, Nginx, pm2, Docker.</li>
+                  </ul>
+                </p>
+              </div>
+
+              <!--SahamCC -->
+              <div class="mb-5 pt-5">
+                <div class="flex mb-5">
+                  <div class="block grow">
+                    <h2 class="font-bold text-lg">Full Stack Developer</h2>
+                    <label>SahamCC · Full-time</label>
+                    <div class="text-gray-600 dark:text-white/50">
+                      Jun 2019 - Dec 2019 · 7 mos, Esfahan, Iran
+                    </div>
+                  </div>
+                  <img
+                    alt="pooyapendar"
+                    width="100"
+                    class="rounded-full"
+                    src="/dist/images/sahamcc.jpg"
+                  />
+                </div>
+                <p class="text-gray-600 dark:text-white/50 italic">
+                  Technology experience:
+                  <ul class="list-inside list-disc text-inherit text-gray-600 dark:text-white/50">
+                    <li>PHP Laravel server REST development.</li>
+                    <li>VueJs, Bootstrap.</li>
+                    <li>Java Android native client application.</li>
+                    <li>Mysql, SQLite Database architecture.</li>
+                    <li>Maintenance project using Linux Ubuntu, Nginx.</li>
+                  </ul>
+                </p>
+              </div>
+
+               <!--Arvana -->
+              <div class="mb-5 pt-5">
+                <div class="flex mb-5">
+                  <div class="block grow">
+                    <h2 class="font-bold text-lg">Full Stack Developer</h2>
+                    <label>Arvana · Full-time</label>
+                    <div class="text-gray-600 dark:text-white/50">
+                      Jun 2018 - Jun 2019 · 1 yr, Esfahan, Iran
+                    </div>
+                  </div>
+                  <img
+                    alt="pooyapendar"
+                    width="80"
+                    class="rounded"
+                    src="/dist/images/i2xi.jpeg"
+                  />
+                </div>
+                <p class="text-gray-600 dark:text-white/50 italic">
+                  It was the first time that I'd started working for foreign companies on several projects.
+                  <br />
+                  Technology experience:
+                  <ul class="list-inside list-disc text-inherit text-gray-600 dark:text-white/50">
+                    <li>PHP Laravel server REST development.</li>
+                    <li>VueJs, Bootstrap.</li>
+                    <li>Java Android native client application.</li>
+                    <li>Mysql, SQLite Database architecture.</li>
+                    <li>Maintenance project using Linux Ubuntu, Nginx.</li>
+                  </ul>
+                </p>
+              </div>
+
+              <!--MaskanFile-->
+              <div class="mb-5 pt-5">
+                <div class="flex mb-5">
+                  <div class="block grow">
+                    <h2 class="font-bold text-lg">Full Stack Developer</h2>
+                    <label>MaskanFile · Full-time</label>
+                    <div class="text-gray-600 dark:text-white/50">
+                      Oct 2017 - Jun 2018 · 9 mos, Esfahan, Iran
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--PartoIdea-->
+              <div class="mb-5 pt-5">
+                <div class="flex mb-5">
+                  <div class="block grow">
+                    <h2 class="font-bold text-lg">Full Stack Developer</h2>
+                    <label>Parto Idea · Full-time</label>
+                    <div class="text-gray-600 dark:text-white/50">
+                      Oct 2016 - Oct 2017 · 1 yr 1 mo, Esfahan, Iran
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Satmak-->
+              <div class="mb-5 pt-5">
+                <div class="flex mb-5">
+                  <div class="block grow">
+                    <h2 class="font-bold text-lg">Full Stack Developer</h2>
+                    <label>Satmak · Full-time</label>
+                    <div class="text-gray-600 dark:text-white/50">
+                      Oct 2014 - Oct 2016 · 2 yrs 1 mo, Esfahan, Iran                   
+                    </div>
+                  </div>
+                </div>
+              </div>
+                 <!--Shaga-->
+                 <div class="mb-5 pt-5">
+                  <div class="flex mb-5">
+                    <div class="block grow">
+                      <h2 class="font-bold text-lg">Full Stack Developer</h2>
+                      <label>Shagaco · Full-time</label>
+                      <div class="text-gray-600 dark:text-white/50">
+                        Apr 2014 - Oct 2014 · 6 mos, Esfahan, Iran                   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="h-96">portfolio</section>
+      <section id="projects" class="h-96">projects</section>
+      <section id="skills" class="h-96">skills</section>
+    </div>
+
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.411/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="/src/app.js"></script>
+    <script src="/src/theme.js"></script>
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <script>
+      GitHubCalendar(".calendar", "rajabit", {
+        cache: 3600,
+        global_stats: false,
+      });
+    </script>
+  </body>
+</html>
