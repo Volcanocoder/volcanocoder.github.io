@@ -12,6 +12,14 @@
 
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding: 80px;
+
+    }
+  </style>
 </head>
 
 <body
@@ -25,8 +33,37 @@
             Home
           </a>
 
-          <button class="border rounded bg-blue-500 text-white px-2 py-1" type="button" onclick="toggleTheme()">
-            toggle Theme
+          <a class="hover:bg-slate-300 active:bg-slate-500 active:dark:bg-slate-800 hover:dark:bg-slate-900 px-3 mx-3 duration-150 transition text-center leading-extra-loose"
+            type="button" href="#about">
+            About
+          </a>
+
+          <a class="hover:bg-slate-300 active:bg-slate-500 active:dark:bg-slate-800 hover:dark:bg-slate-900 px-3 mx-3 duration-150 transition text-center leading-extra-loose"
+            type="button" href="#experiences">
+            Experiences
+          </a>
+
+          <a class="hover:bg-slate-300 active:bg-slate-500 active:dark:bg-slate-800 hover:dark:bg-slate-900 px-3 mx-3 duration-150 transition text-center leading-extra-loose"
+            type="button" href="#portfolio">
+            Portfolio
+          </a>
+
+          <div class="grow"></div>
+
+          <button title="Switch Theme" class="rounded px-2 py-1" type="button" onclick="toggleTheme()">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 dark:hidden block">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 hidden dark:block">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+
           </button>
         </div>
       </div>
@@ -365,14 +402,15 @@
                   <li>4. Online pronunciation test</li>
                   <li>5. Role-play chat bot (Using Claude)</li>
                   <li>6. Marketplace for English multimedia products</li>
+                  <li>7. Multilingual (currently only English)</li>
                 </ul>
               </div>
-              <div class="grid gap-4">
+              <div class="grid gap-2">
                 <a target="_blank" href="/dist/images/projects/lingua-01.png">
                   <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/lingua-01.png"
                     alt="LinguaCulture">
                 </a>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-3 gap-2">
                   <a target="_blank" href="/dist/images/projects/lingua-02.png">
                     <img class="aspect-square rounded shadow" src="/dist/images/projects/lingua-02.png"
                       alt="LinguaCulture">
@@ -389,6 +427,132 @@
               </div>
             </div>
 
+            <!-- Parspedia -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Parspedia
+                </div>
+                <a rel="noopener" class="text-sm underline text-blue-600" target="_blank" href="https://parspedia.net">
+                  Online Multimedia products sell and stream
+                </a>
+                <div>
+                  Full-Stack Developer · 2019 ~ Present <br />
+                  Laravel, Vue3, Vuetify, Tailwind
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Online video stream using hls</li>
+                  <li>2. Hls Multi Audio and subtitle track support</li>
+                  <li>3. Panorama Stream including multilingual audio tracks</li>
+                  <li>4. Multilingual (rtl, ltr)</li>
+                  <li>5. Multi Currency support</li>
+                  <li>6. Including desktop application (Electron)</li>
+                </ul>
+              </div>
+              <div class="grid gap-2">
+                <a target="_blank" href="/dist/images/projects/parspedia-01.png">
+                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/parspedia-01.png"
+                    alt="LinguaCulture">
+                </a>
+                <div class="grid grid-cols-3 gap-2">
+                  <a target="_blank" href="/dist/images/projects/parspedia-02.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/parspedia-02.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/parspedia-03.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/parspedia-03.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/parspedia-04.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/parspedia-04.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/parspedia-05.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/parspedia-05.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/parspedia-06.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/parspedia-06.png"
+                      alt="LinguaCulture">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Peyda -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  PeydaShop
+                </div>
+                <a rel="noopener" class="text-sm underline text-blue-600" target="_blank" href="https://m.peyda.group">
+                  Your Online Pharmacy
+                </a>
+                <div>
+                  Backend Developer · 2023 ~ Present <br />
+                  Laravel
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Online marketplace (Multi-shop Support)</li>
+                  <li>2. Fully synced with Meshkat company</li>
+                  <li>3. Automatic update and submit order to Meshkat branches</li>
+                </ul>
+              </div>
+              <div class="grid gap-2">
+                <a target="_blank" href="/dist/images/projects/peyda-01.png">
+                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/peyda-01.png"
+                    alt="LinguaCulture">
+                </a>
+                <div class="grid grid-cols-2 gap-2">
+                  <a target="_blank" href="/dist/images/projects/peyda-02.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/peyda-02.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/peyda-03.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/peyda-03.png"
+                      alt="LinguaCulture">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- AhanYab -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  AhanYab
+                </div>
+                <a rel="noopener" class="text-sm underline text-blue-600" target="_blank" href="https://ahanyab.com">
+                  Online spot price
+                </a>
+                <div>
+                  Full-Stack Developer · 2023 ~ Present <br />
+                  NestJs, Vue3, Vuetify, Tailwind
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Auto sync products and prices</li>
+                </ul>
+              </div>
+              <div class="grid gap-2">
+                <a target="_blank" href="/dist/images/projects/ahanyab-01.png">
+                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/ahanyab-01.png"
+                    alt="LinguaCulture">
+                </a>
+                <div class="grid grid-cols-2 gap-2">
+                  <a target="_blank" href="/dist/images/projects/ahanyab-02.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/ahanyab-02.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/ahanyab-03.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/ahanyab-03.png"
+                      alt="LinguaCulture">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
             <!-- Hajbehzad -->
             <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
               <div class="col-span-2">
@@ -399,7 +563,7 @@
                   Online food ordering application
                 </a>
                 <div>
-                  Full-Stack Developer · 2022 ~ 2023 <br />
+                  Full-Stack Developer · 2021 ~ 2023 <br />
                   Laravel, Vue2, Vuetify
                 </div>
                 <ul class="text-gray-600 dark:text-white/50">
@@ -409,12 +573,12 @@
                   <li>4. Organizational sales</li>
                 </ul>
               </div>
-              <div class="grid gap-4">
+              <div class="grid gap-2">
                 <a target="_blank" href="/dist/images/projects/hajbehzad-01.png">
                   <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/hajbehzad-01.png"
                     alt="LinguaCulture">
                 </a>
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-2 gap-2">
                   <a target="_blank" href="/dist/images/projects/hajbehzad-02.png">
                     <img class="aspect-square rounded shadow" src="/dist/images/projects/hajbehzad-02.png"
                       alt="LinguaCulture">
@@ -427,13 +591,60 @@
               </div>
             </div>
 
+
+            <!-- Healthapp -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Healthapp
+                </div>
+                <a rel="noopener" class="text-sm underline text-blue-600" target="_blank" href="https://mosito.ir">
+                  Find prescription drugs
+                </a>
+                <div>
+                  Frontend Developer · 2019 ~ 2021 <br />
+                  Vue2, Vuetify
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Find and crop paper using js (imagine how much time did it take)</li>
+                  <li>2. Share Prescription between pharmacies to find drugs</li>
+                  <li>3. Select pharmacy > pay > deliver!</li>
+                </ul>
+              </div>
+              <div class="grid gap-2">
+                <a target="_blank" href="/dist/images/projects/mosito-01.png">
+                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/mosito-01.png"
+                    alt="LinguaCulture">
+                </a>
+                <div class="grid grid-cols-4 gap-2">
+                  <a target="_blank" href="/dist/images/projects/mosito-02.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/mosito-02.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/mosito-03.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/mosito-03.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/mosito-04.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/mosito-04.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/mosito-05.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/mosito-05.png"
+                      alt="LinguaCulture">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
             <!-- Mosito -->
             <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
               <div class="col-span-2">
                 <div class="text-lg font-bold">
                   Mosito
                 </div>
-                <a rel="noopener" class="text-sm underline text-blue-600" target="_blank" href="https://hajbehzad.com">
+                <a rel="noopener" class="text-sm underline text-blue-600" target="_blank" href="https://mosito.ir">
                   Online persian music stream
                 </a>
                 <div>
@@ -441,27 +652,252 @@
                   Laravel, Vue2, Vuetify
                 </div>
                 <ul class="text-gray-600 dark:text-white/50">
-                  <li>1. Auto import, and sync music</li>
-                  <li>2. Using telegram as storage</li>
-                  <li>3. Fully classified database</li>
-                  <li>4. 800K monthly viewers before ban</li>
+                  <li>1. Auto import, and sync musics</li>
+                  <li>2. Multilingual</li>
+                  <li>3. Dark, Light support</li>
+                  <li>4. Using telegram as storage</li>
+                  <li>5. Fully classified database</li>
+                  <li>6. 800K monthly viewers before ban</li>
                 </ul>
               </div>
-              <div class="grid gap-4">
-                <a target="_blank" href="/dist/images/projects/hajbehzad-01.png">
-                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/hajbehzad-01.png"
+              <div class="grid gap-2">
+                <a target="_blank" href="/dist/images/projects/mosito-01.png">
+                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/mosito-01.png"
                     alt="LinguaCulture">
                 </a>
-                <div class="grid grid-cols-2 gap-4">
-                  <a target="_blank" href="/dist/images/projects/hajbehzad-02.png">
-                    <img class="aspect-square rounded shadow" src="/dist/images/projects/hajbehzad-02.png"
+                <div class="grid grid-cols-4 gap-2">
+                  <a target="_blank" href="/dist/images/projects/mosito-02.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/mosito-02.png"
                       alt="LinguaCulture">
                   </a>
-                  <a target="_blank" href="/dist/images/projects/hajbehzad-03.png">
-                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/hajbehzad-03.png"
+                  <a target="_blank" href="/dist/images/projects/mosito-03.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/mosito-03.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/mosito-04.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/mosito-04.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/mosito-05.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/mosito-05.png"
                       alt="LinguaCulture">
                   </a>
                 </div>
+              </div>
+            </div>
+
+            <!-- Tyliver -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Tyliver Shop
+                </div>
+                <a rel="noopener" class="text-sm underline" target="_blank">
+                  Online shop
+                </a>
+                <div>
+                  Backend-Stack Developer · 2019 ~ 2020 <br />
+                  Lumen<br />
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. this one uses the exact same code that Hypernik is using</li>
+                </ul>
+              </div>
+
+              <div class="grid gap-2">
+                <a target="_blank" href="/dist/images/projects/tyliver-01.png">
+                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/tyliver-01.png"
+                    alt="LinguaCulture">
+                </a>
+                <div class="grid grid-cols-4 gap-2">
+                  <a target="_blank" href="/dist/images/projects/tyliver-02.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/tyliver-02.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/tyliver-03.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/tyliver-03.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/tyliver-04.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/tyliver-04.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/tyliver-05.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/tyliver-05.png"
+                      alt="LinguaCulture">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hypernik -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Hypernik
+                </div>
+                <a rel="noopener" class="text-sm underline " target="_blank">
+                  Online food shop
+                </a>
+                <div>
+                  Backend-Stack Developer · 2019 ~ 2020 <br />
+                  Lumen<br />
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Online shop which exactly you know what it does</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Bimauto -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Bimauto
+                </div>
+                <a rel="noopener" class="text-sm underline " target="_blank">
+                  Company office automation
+                </a>
+                <div>
+                  Full-Stack Developer · 2017 ~ 2019 <br />
+                  Laravel, Vue2, Vuetify<br />
+                  Java Android (Client Application)
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Company office automation (MehrGostar)</li>
+                  <li>2. Marketer, Customer management</li>
+                  <li>3. Accounting</li>
+                  <li>4. Online insurance reserve</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Firkie -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Fin & Firkie
+                </div>
+                <a rel="noopener" class="text-sm underline " target="_blank">
+                  Canadian education application
+                </a>
+                <div>
+                  Full-Stack Developer · 2018 ~ 2019 <br />
+                  Laravel, VueJs Bootstrap <br />
+                  Java Android (Client Application)
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. They told me to not describe these two</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Baarnet -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Baarnet
+                </div>
+                <a rel="noopener" class="text-sm underline " href="http://baarnet.com" target="_blank">
+                  Uber-like app for trucks in Isfahan
+                </a>
+                <div>
+                  Backend Developer · 2019 <br />
+                  Laravel, Angular
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. I just worked on it for a short time till they got a developer</li>
+                </ul>
+              </div>
+              <div class="grid gap-2">
+                <a target="_blank" href="/dist/images/projects/baarnet-01.png">
+                  <img class="h-auto max-w-full rounded shadow" src="/dist/images/projects/baarnet-01.png"
+                    alt="LinguaCulture">
+                </a>
+                <div class="grid grid-cols-2 gap-2">
+                  <a target="_blank" href="/dist/images/projects/baarnet-02.png">
+                    <img class="aspect-square rounded shadow" src="/dist/images/projects/baarnet-02.png"
+                      alt="LinguaCulture">
+                  </a>
+                  <a target="_blank" href="/dist/images/projects/baarnet-03.png">
+                    <img class="aspect-square	 rounded shadow" src="/dist/images/projects/baarnet-03.png"
+                      alt="LinguaCulture">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Maskan -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Ma3kan
+                </div>
+                <a rel="noopener" class="text-sm underline " target="_blank">
+                  Something about rend and buying houses
+                </a>
+                <div>
+                  Full-Stack Developer · 2017 ~ 2018 <br />
+                  Laravel, VueJs Bootstrap <br />
+                  Java Android Client App
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Nothing but hope never see those guys again</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- TicketYab -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  TicketYab
+                </div>
+                <a rel="noopener" class="text-sm underline " href="https://ticketyab.com/" target="_blank">
+                  Book airline tickets
+                </a>
+                <div>
+                  Full-Stack Developer · 2016 ~ 2017 <br />
+                  Laravel, VueJs Bootstrap <br />
+                  Java Android Client App
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Reserve tickets to Charter724 apis</li>
+                  <li>2. Java android application</li>
+                  <li>3. They moved to Charter724 blog-like platform</li>
+                  <li>4. Hardly remember anything else ...</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Satmak -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                <div class="text-lg font-bold">
+                  Satmak
+                </div>
+                <a rel="noopener" class="text-sm underline " target="_blank">
+                  Attendance raspberry device
+                </a>
+                <div>
+                  Full-Stack Developer · 2014 ~ 2016 <br />
+                  Laravel, Bootstrap Jquery, Python <br />
+                  Raspberry RFID Card Scanner Device
+                </div>
+                <ul class="text-gray-600 dark:text-white/50">
+                  <li>1. Develop Raspberry pi board</li>
+                  <li>2. Support RFID card reader</li>
+                  <li>3. Support Fingerprint modules</li>
+                  <li>4. Fully synced with the server</li>
+                  <li>5. Buttery support up to 4 hours</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Others -->
+            <div class="grid grid-cols-3 gap-3 mb-5 pt-5">
+              <div class="col-span-2">
+                And there are many other projects that have never been completed.
               </div>
             </div>
           </div>
