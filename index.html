@@ -70,9 +70,9 @@
     </header>
 
     <section id="home">
-      <div class="grid grid-cols-1 md:grid-cols-3">
-        <div class="flex flex-col items-center justify-center">
-          <div class="text-exl font-extrabold ...">
+      <div class="grid grid-cols-1 lg:grid-cols-3">
+        <div class="flex flex-col items-center justify-center py-12">
+          <div class="text-exl font-extrabold text-center">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
               Mehdi Rajabi
             </span>
@@ -144,7 +144,7 @@
           </div>
         </div>
 
-        <div class="col-span-2 flex overflow-hidden h-100 items-center">
+        <div class="col-span-2 md:flex overflow-hidden h-100 items-center hidden">
           <canvas class="block !w-full" id="canvas3d"></canvas>
         </div>
       </div>
@@ -156,10 +156,10 @@
           class="bg-white dark:bg-zinc-900 grid grid-cols-4 gap-3 rounded-md border border-slate-200 dark:border-slate-900 overflow-hidden p-5 shadow-lg">
           <div class="col-span-4 md:col-span-1 grid grid-cols-2">
             <img alt="mehdi rajabi"
-              class="col-span-1 md:col-span-2 mx-auto rounded shadow-md border text-sm border-slate-200 mb-2 w-48 h-48 dark:border-slate-900"
+              class="col-span-2 sm:col-span-1 md:col-span-2 mx-auto rounded shadow-md border text-sm border-slate-200 mb-2 w-48 h-48 dark:border-slate-900"
               src="https://avatars.githubusercontent.com/u/25779946" />
 
-            <div class="col-span-1 md:col-span-2 h-full flex items-center justify-center">
+            <div class="col-span-2 sm:col-span-1 md:col-span-2 h-full flex items-center justify-center">
               <ul class="list-inside list-none text-gray-600 text-sm dark:text-white/70">
                 <li class="flex items-center mb-1">
                   <svg fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -210,7 +210,7 @@
               <iframe title="git" class="w-[800px]" src="https://notion-github-embed.vercel.app/chart/rajabit"></iframe>
             </div>
 
-            <div id="bio" class="mt-5">
+            <div id="bio" class="mt-5 ">
               <h1 class="text-xl font-bold mb-1">About</h1>
               <p class="text-italic text-gray-600 dark:text-white/70 md:w-4/6" lang="en">
                 Full-Stack and mobile application developer with 10 years of
@@ -230,7 +230,7 @@
 
     <section id="experiences" class="mb-5">
       <div class="container mx-auto">
-        <div class="w-full md:w-4/5 lg:w-4/6 align-middle flex mx-auto">
+        <div class="w-full md:w-4/5 lg:w-4/6 align-middle flex flex-col lg:flex-row mx-auto">
           <div>
             <h1 class="uppercase font-bold text-2xl underline grow-0 px-3 py-5">
               Experience
@@ -374,7 +374,7 @@
 
     <section id="portfolio" class="h-96">
       <div class="container mx-auto">
-        <div class="w-full md:w-4/5 lg:w-4/6 align-middle flex mx-auto">
+        <div class="w-full md:w-4/5 lg:w-4/6 align-middle flex flex-col lg:flex-row  mx-auto">
           <div>
             <h1 class="uppercase font-bold text-2xl underline grow-0 px-3 py-5">
               Portfolio
